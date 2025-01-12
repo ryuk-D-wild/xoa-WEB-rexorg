@@ -13,7 +13,7 @@ function App() {
         <Navigation />
       </div>
       <div className="pt-28">
-        {/* <HomePage /> */}
+         <HomePage /> 
         <Product/>
       </div>
         <Footer/>

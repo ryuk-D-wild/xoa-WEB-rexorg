@@ -1,6 +1,6 @@
 export const product=[
     {
-        "image": "https://media.istockphoto.com/vectors/demo-sign-icon-demonstration-symbol-vector-id611634218?k=6",
+        "image": "/assets/woman-9264738_1280.jpg",
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",

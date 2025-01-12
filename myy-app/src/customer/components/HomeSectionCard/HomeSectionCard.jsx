@@ -6,7 +6,7 @@ const HomeSectionCard =({product})=> {
           <div className="h-[13rem] w-full flex items-center justify-center">
             <img
               className="object-cover w-[10rem] h-[13rem] rounded-md"
-              src={product.imageUrl}
+              src={product.image}
               alt=""
             />
           </div>
