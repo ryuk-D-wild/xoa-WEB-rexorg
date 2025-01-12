@@ -234,7 +234,7 @@ export default function Navigation() {
                   <span className="sr-only">Your Company</span>
                   <img
                     alt=""
-                    src=""
+                    src="assets/logos/WhatsApp Image 2025-01-09 at 23.26.16_a0316a31.jpg"
                     className="h-8 w-auto"
                   />
                 </a>
