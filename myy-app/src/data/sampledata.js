@@ -10,7 +10,7 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/ethnic-set/b/4/m/m-na-kurta-set-010-rama-woxen-original-imagzkgg8mnyxmcg.jpeg?q=70",
+        "image": "https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg",
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",
