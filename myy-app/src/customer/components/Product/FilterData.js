@@ -1,11 +1,26 @@
-const subCategories = [
-    { name: 'Totes', href: '#' },
-    { name: 'Backpacks', href: '#' },
-    { name: 'Travel Bags', href: '#' },
-    { name: 'Hip Bags', href: '#' },
-    { name: 'Laptop Sleeves', href: '#' },
-  ]
-  const filters = [
+export const singleFilter = [
+    { 
+        id: "price",
+        name: "price",
+        options: [
+            {value: "149-399", label: "₹149 to ₹399" },
+            {value: "149-399", label: "₹149 to ₹399" },
+            {value: "149-399", label: "₹149 to ₹399" },
+            {value: "149-399", label: "₹149 to ₹399" },
+            {value: "149-399", label: "₹149 to ₹399" },
+            {value: "149-399", label: "₹149 to ₹399" },
+        ],
+    },
+    {
+        id: "stock",
+        name: "Avaliability",
+        options: [
+            {value: "in_stock", label: "In Stock"},
+            {value: "out_of_stock", label: "Out of Stock"}
+        ],
+    },
+  ];
+  export const filters = [
     {
       id: 'color',
       name: 'Color',
@@ -16,6 +31,7 @@ const subCategories = [
         { value: 'brown', label: 'Brown', checked: false },
         { value: 'green', label: 'Green', checked: false },
         { value: 'purple', label: 'Purple', checked: false },
+        { value: 'Black', label: 'Black', checked: false },
       ],
     },
     {

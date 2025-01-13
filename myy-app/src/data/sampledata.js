@@ -4,7 +4,7 @@ export const product=[
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",
-        "selling_price": "₹699",
+        "sprice": "₹699",
         "price": "₹2,899",
         "disscount": "75% off",
         "size": ""
@@ -14,7 +14,7 @@ export const product=[
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",
-        "selling_price": "₹699",
+        "sprice": "₹699",
         "price": "₹2,899",
         "disscount": "75% off",
         "size": ""
@@ -24,7 +24,7 @@ export const product=[
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",
-        "selling_price": "₹699",
+        "sprice": "₹699",
         "price": "₹2,899",
         "disscount": "75% off",
         "size": ""
@@ -34,7 +34,7 @@ export const product=[
         "brand": "WOXEN",
         "title": "Women Kurta and Pant Set Art Silk",
         "color": "",
-        "selling_price": "₹699",
+        "sprice": "₹699",
         "price": "₹2,899",
         "disscount": "75% off",
         "size": ""
@@ -44,7 +44,7 @@ export const product=[
         "brand": "LIBAS",
         "title": "Women Kurta and Palazzo Set Cotton Blend",
         "color": "",
-        "selling_price": "₹1,082",
+        "sprice": "₹1,082",
         "price": "₹2,799",
         "disscount": "61% off",
         "size": ""
@@ -54,7 +54,7 @@ export const product=[
         "brand": "Samah",
         "title": "Women Kurta, Pant And Dupatta Set Silk Blend, Cotton Bl...",
         "color": "",
-        "selling_price": "₹702",
+        "sprice": "₹702",
         "price": "₹3,997",
         "disscount": "82% off",
         "size": ""
@@ -64,7 +64,7 @@ export const product=[
         "brand": "Klosia",
         "title": "Women Kurta, Pant And Dupatta Set Viscose Rayon",
         "color": "",
-        "selling_price": "₹664",
+        "sprice": "₹664",
         "price": "₹2,999",
         "disscount": "77% off",
         "size": ""
@@ -74,7 +74,7 @@ export const product=[
         "brand": "shoecom",
         "title": "Women Kurta and Palazzo Set Viscose Rayon",
         "color": "",
-        "selling_price": "₹433",
+        "sprice": "₹433",
         "price": "₹2,995",
         "disscount": "85% off",
         "size": ""
