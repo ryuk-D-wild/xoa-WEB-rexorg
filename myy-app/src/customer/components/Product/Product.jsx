@@ -35,28 +35,34 @@ function classNames(...classes) {
 
 export default function Product() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-  const location=useLocation()
-  const nevigate=useNavigate();
+  const location = useLocation()
+  const navigate = useNavigate();
 
-  const handleFilter = (value, sectionId)=>{
-    const searchparams=new URLSearchParams(location.search)
-    let filterValue=searchparams.getAll(sectionId)
-    if(filterValue.lenght>0 && filterValue[0].split(",").includes(value)){
-      filterValue=filterValue[0].split(',').filter((item)=>item!==value);
+  const handleFilter = (value, sectionId) => {
+    const searchParams = new URLSearchParams(location.search);
+    let filterValue = searchParams.get(sectionId)?.split(',') || []; // Get existing filter values or initialize empty array
 
-      if(filterValue.lenght==0){
-        searchparams.delete(sectionId)
-      }
+    if (filterValue.includes(value)) {
+      // Remove value if it already exists
+      filterValue = filterValue.filter(item => item !== value);
+    } else {
+      // Add value if it doesn't exist
+      filterValue.push(value);
     }
-    else{
-      filterValue.push(value)
+
+    if (filterValue.length > 0) {
+      // Update the filter in the URL if values exist
+      searchParams.set(sectionId, filterValue.join(','));
+    } else {
+      // Remove the filter from the URL if no values are left
+      searchParams.delete(sectionId);
     }
-    if(filterValue.length>0){
-      searchparams.set(sectionId,filterValue.join(","));
-      const query=searchparams.toString();
-      nevigate({search:'?${query}'})
-    }
-  }
+
+    // Generate the new query string
+    const query = searchParams.toString();
+    navigate(`?${query}`); // Update the URL with the new query string
+  };
+
 
   return (
     <div className="bg-white">
@@ -113,13 +119,16 @@ export default function Product() {
                             <div className="flex h-5 shrink-0 items-center">
                               <div className="group grid size-4 grid-cols-1">
                                 <input
-                                  onChange={()=>handleFilter()}
-                                  defaultValue={option.value}
-                                  id={`filter-mobile-${section.id}-${optionIdx}`}
+                                  onChange={() => handleFilter(option.value, section.id)}
+                                  value={option.value}
+                                  checked={new URLSearchParams(location.search)
+                                    .get(section.id)?.split(',')?.includes(option.value) || false}
+                                  id={`filter-${section.id}-${optionIdx}`}
                                   name={`${section.id}[]`}
                                   type="checkbox"
                                   className="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                 />
+
                                 <svg
                                   fill="none"
                                   viewBox="0 0 14 14"
@@ -154,7 +163,7 @@ export default function Product() {
                     </DisclosurePanel>
                   </Disclosure>
                 ))}
-                
+
               </form>
             </DialogPanel>
           </div>
@@ -241,13 +250,16 @@ export default function Product() {
                             <div className="flex h-5 shrink-0 items-center">
                               <div className="group grid size-4 grid-cols-1">
                                 <input
-                                  defaultValue={option.value}
-                                  defaultChecked={option.checked}
+                                  onChange={() => handleFilter(option.value, section.id)}
+                                  value={option.value}
+                                  checked={new URLSearchParams(location.search)
+                                    .get(section.id)?.split(',')?.includes(option.value) || false}
                                   id={`filter-${section.id}-${optionIdx}`}
                                   name={`${section.id}[]`}
                                   type="checkbox"
                                   className="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                 />
+
                                 <svg
                                   fill="none"
                                   viewBox="0 0 14 14"
