@@ -1,25 +1,3 @@
-export const singleFilter = [
-    { 
-        id: "price",
-        name: "price",
-        options: [
-            {value: "149-399", label: "₹149 to ₹399" },
-            {value: "149-399", label: "₹149 to ₹399" },
-            {value: "149-399", label: "₹149 to ₹399" },
-            {value: "149-399", label: "₹149 to ₹399" },
-            {value: "149-399", label: "₹149 to ₹399" },
-            {value: "149-399", label: "₹149 to ₹399" },
-        ],
-    },
-    {
-        id: "stock",
-        name: "Avaliability",
-        options: [
-            {value: "in_stock", label: "In Stock"},
-            {value: "out_of_stock", label: "Out of Stock"}
-        ],
-    },
-  ];
   export const filters = [
     {
       id: 'color',
@@ -57,4 +35,24 @@ export const singleFilter = [
         { value: '40l', label: '40L', checked: true },
       ],
     },
+    { 
+      id: "price",
+      name: "price",
+      options: [
+          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "149-399", label: "₹149 to ₹399" },
+      ],
+  },
+  {
+      id: "stock",
+      name: "Avaliability",
+      options: [
+          {value: "in_stock", label: "In Stock"},
+          {value: "out_of_stock", label: "Out of Stock"}
+      ],
+  },
   ]

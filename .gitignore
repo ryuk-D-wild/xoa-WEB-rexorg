@@ -1,0 +1,9 @@
+# Ignore cache files
+*.cache
+*.tmp
+
+# Ignore directories
+server/node_modules/.cache/
+myy-app/node_modules/.cache/
+server/node_modules/tmp/
+myy-app/node_modules/tmp/
