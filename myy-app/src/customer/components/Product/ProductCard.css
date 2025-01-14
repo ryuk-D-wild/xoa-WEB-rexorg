@@ -1,0 +1,38 @@
+.productCard {
+    width: 15rem;
+    margin: 1rem;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    cursor: pointer;
+    border: 1px solid #d4b483;
+    background: #f5f0e3; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productCard .textPart {
+    transition: transform 0.3s ease-out;
+    color: #5a3921; 
+}
+
+
+.productCard:hover .textPart {
+    transform: translateY(-1rem);
+}
+
+.productCard:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-0.5rem); 
+}
+
+.productCard:hover img {
+    transform: scale(1.05);
+}
+
+.productCard .textPart {
+    padding: 0.5rem;
+    font-family: "Georgia", serif; 
+    text-align: center;
+}
+
+.productCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
