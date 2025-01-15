@@ -40,11 +40,11 @@
       name: "price",
       options: [
           {value: "149-399", label: "₹149 to ₹399" },
-          {value: "149-399", label: "₹149 to ₹399" },
-          {value: "149-399", label: "₹149 to ₹399" },
-          {value: "149-399", label: "₹149 to ₹399" },
-          {value: "149-399", label: "₹149 to ₹399" },
-          {value: "149-399", label: "₹149 to ₹399" },
+          {value: "500-750", label: "₹500 to ₹750" },
+          {value: "750-900", label: "₹750 to ₹900" },
+          {value: "900-1000", label: "₹900to ₹1000" },
+          {value: "1000-1500", label: "₹1000 to ₹1500" },
+          {value: "1500-2000", label: "₹1500 to ₹2000" },
       ],
   },
   {

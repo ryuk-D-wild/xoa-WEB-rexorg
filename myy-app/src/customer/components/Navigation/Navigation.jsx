@@ -17,6 +17,7 @@ import {
 } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
+
 const navigation = {
   categories: [
     {
@@ -77,7 +78,7 @@ const navigation = {
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
+    { name: 'All Cloths', href: '#' },
     { name: 'Stores', href: '#' },
   ],
 }
@@ -210,8 +211,8 @@ export default function Navigation() {
       </Dialog>
        {/* sales area for advertise */}
        <header className="relative bg-white">
-       <p className="flex h-10 items-center justify-center bg-gradient-to-r from-green-500 via-green-600 to-green-700 px-6 text-sm font-bold text-white shadow-md transition-transform transform hover:scale-105 sm:px-8 lg:px-10 rounded-lg">
-           INFINIA
+       <p className="flex h-10 items-center justify-center bg-gradient-to-r from-yellow-500 via-red-500 to-red-700 px-6 text-sm font-bold text-white shadow-md transition-transform transform hover:scale-105 sm:px-8 lg:px-10 rounded-lg overflow-hidden wave-3d">
+       INFINIA
        </p>
 
 

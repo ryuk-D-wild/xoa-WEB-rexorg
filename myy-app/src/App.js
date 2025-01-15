@@ -5,6 +5,7 @@ import Navigation from './customer/components/Navigation/Navigation';
 import Footer from './customer/components/Footer/Footer';
 import Product from './customer/components/Product/Product';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ProductDetails from './customer/components/productDetails/productDetails';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       </div>
       <div className="pt-28">
         {/* <HomePage /> */}
-        <Product/>
+        {/* <Product/>   */}
+        <ProductDetails />
       </div>
         <Footer/>
     </div>
