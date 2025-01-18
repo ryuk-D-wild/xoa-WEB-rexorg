@@ -1,8 +1,8 @@
-export const product=[
+export const sproduct=[
     {
         "image": "/assets/woman-9264738_1280.jpg",
-        "brand": "WOXEN",
-        "title": "Women Kurta and Pant Set Art Silk",
+        "brand": "Prd Name",
+        "title": "title goes here",
         "color": "black",
         "sprice": "₹699",
         "price": "₹2,899",
@@ -11,8 +11,8 @@ export const product=[
     },
     {
         "image": "https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg",
-        "brand": "WOXEN",
-        "title": "Women Kurta and Pant Set Art Silk",
+        "brand": "Prd Name",
+        "title": "title goes here",
         "color": "white",
         "sprice": "₹699",
         "price": "₹2,899",
@@ -20,9 +20,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/ethnic-set/b/4/m/m-na-kurta-set-010-rama-woxen-original-imagzkgg8mnyxmcg.jpeg?q=70",
-        "brand": "WOXEN",
-        "title": "Women Kurta and Pant Set Art Silk",
+        "image": "https://i.postimg.cc/tgyvyRPP/woman-6466382-640.jpg",
+        "brand": "Prd Name",
+        "title": "eg color",
         "color": "red",
         "sprice": "₹699",
         "price": "₹2,899",
@@ -30,9 +30,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/ethnic-set/b/4/m/m-na-kurta-set-010-rama-woxen-original-imagzkgg8mnyxmcg.jpeg?q=70",
-        "brand": "WOXEN",
-        "title": "Women Kurta and Pant Set Art Silk",
+        "image": "https://i.postimg.cc/sgmngcT5/rear-5882411-640.jpg",
+        "brand": "Prd Name",
+        "title": "eg ware",
         "color": "",
         "sprice": "₹699",
         "price": "₹2,899",
@@ -40,9 +40,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/ethnic-set/2/l/r/l-6909-blue-libas-original-imafygzxftqzszfx-bb.jpeg?q=70",
-        "brand": "LIBAS",
-        "title": "Women Kurta and Palazzo Set Cotton Blend",
+        "image": "https://i.postimg.cc/QMn0pMGt/woman-6851973-640.jpg",
+        "brand": "Prd Name",
+        "title": "color etc",
         "color": "",
         "sprice": "₹1,082",
         "price": "₹2,799",
@@ -50,9 +50,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/l3t2fm80/ethnic-set/o/q/7/m-9kbd183-samah-original-imageuh5a8hgwusj.jpeg?q=70",
-        "brand": "Samah",
-        "title": "Women Kurta, Pant And Dupatta Set Silk Blend, Cotton Bl...",
+        "image": "https://i.postimg.cc/G3DqyrML/girl-1141279-1280.jpg",
+        "brand": "Prd Name",
+        "title": "eg type",
         "color": "",
         "sprice": "₹702",
         "price": "₹3,997",
@@ -60,9 +60,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/l2z26q80/ethnic-set/s/n/m/xxl-blue-indigoset-klosia-original-image7c4dckmy2tt.jpeg?q=70",
-        "brand": "Klosia",
-        "title": "Women Kurta, Pant And Dupatta Set Viscose Rayon",
+        "image": "https://i.postimg.cc/15H0GzDQ/beautiful-8267949-960-720.webp",
+        "brand": "Prd Name",
+        "title": "eg tradition",
         "color": "",
         "sprice": "₹664",
         "price": "₹2,999",
@@ -70,9 +70,9 @@ export const product=[
         "size": ""
     },
     {
-        "image": "https://rukminim1.flixcart.com/image/612/612/l0mr7gw0/ethnic-set/e/r/w/m-palazoo-set-kenix-world-original-imagcdtgpszm7cdy.jpeg?q=70",
-        "brand": "shoecom",
-        "title": "Women Kurta and Palazzo Set Viscose Rayon",
+        "image": "https://i.postimg.cc/qBSTrn73/woman-8180638-1280.webp",
+        "brand": "Prd Name",
+        "title": "eg vintage category",
         "color": "",
         "sprice": "₹433",
         "price": "₹2,995",

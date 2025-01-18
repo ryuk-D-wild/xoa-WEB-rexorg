@@ -19,12 +19,14 @@
 
 import { useState } from 'react'
 import { Radio, RadioGroup } from '@headlessui/react'
-import { Box, Button, Grid2, LinearProgress, Rating } from '@mui/material'
+import { Box, Button, Grid, LinearProgress, Rating } from '@mui/material'
 import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import ProductReviewCard from './productReviewCard'
+import HomeSectionCard from './../HomeSectionCard/HomeSectionCard'
+import { sproduct } from '../../../data/sampledata'
 
 const product = {
-  name: 'Basic Tee 6-Pack',
+  name: 'demo look',
   price: '$192',
   href: '#',
   breadcrumbs: [
@@ -33,19 +35,19 @@ const product = {
   ],
   images: [
     {
-      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+      src: 'https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg',
       alt: 'Two each of gray, white, and black shirts laying flat.',
     },
     {
-      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
+      src: 'https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg',
       alt: 'Model wearing plain black basic tee.',
     },
     {
-      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
+      src: 'https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg',
       alt: 'Model wearing plain gray basic tee.',
     },
     {
-      src: 'https://tailwindui.com/plus/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+      src: 'https://i.postimg.cc/dtRngz8C/girl-1333640-640.jpg',
       alt: 'Model wearing plain white basic tee.',
     },
   ],
@@ -260,32 +262,77 @@ export default function ProductDetails() {
         {/*ratings and review*/}
         <section>
           <h1 className="font-semibold text-lg pb-4">Recent Review & Ratings</h1>
-          <div className="border p-5">
-            <Grid2 container spacing={7}>
-              <Grid2 item xs={7}>
+          <div>
+            <Grid container spacing={7}>
+              <Grid item xs={7}>
                 <div className="space-y-5">
                   <ProductReviewCard />
                 </div>
-              </Grid2>
-              <Grid2 item xs={5} sx={{ textAlign: "left" }}>
-                <h1 className="text-x1 font-semibold pb-1">Product Ratings</h1>
+              </Grid>
+
+              <Grid item xs={5} sx={{ textAlign: "left" }}>
+                <h1 className="text-x1 font-semibold pb-2">Product Ratings</h1>
                 <div className="flex items-center space-x-3">
                   <Rating value={4.6} precision={0.5} readOnly />
                   <p className="opacity-60">111,000,000 Ratings</p>
                 </div>
-                <Box>
-                  <Grid2 container justifyContent="flex-start" alignItems="center" gap={2}>
-                    <Grid2 item xs={2}>
+                <Box className="mt-5 space-y-3" >
+                  <Grid container alignItems="center" gap={2}>
+                    <Grid item xs={2}>
                       <p>Excellent</p>
-                    </Grid2>
-                    <Grid2 item xs={7}>
-                      <LinearProgress sx ={{bgcolor:"white",borderRadius:4,height:7}}variant="determinate" value={40} color="success" />
-                    </Grid2>
-                  </Grid2>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <LinearProgress sx={{ bgcolor: "#d0d0d0", borderRadius: 4, height: 7 }} variant="determinate" value={40} color="success" />
+                    </Grid>
+                  </Grid>
+                  
+                  <Grid container alignItems="center" gap={2}>
+                    <Grid item xs={2}>
+                      <p>Very good</p>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <LinearProgress sx={{ bgcolor: "#d0d0d0", borderRadius: 4, height: 7 }} variant="determinate" value={30} color="better" />
+                    </Grid>
+                  </Grid>
+
+                  <Grid container alignItems="center" gap={2}>
+                    <Grid item xs={2}>
+                      <p>good</p>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <LinearProgress sx={{ bgcolor: "#d0d0d0", borderRadius: 4, height: 7 }} variant="determinate" value={20} color="success" />
+                    </Grid>
+                  </Grid>
+                  
+                  <Grid container alignItems="center" gap={2}>
+                    <Grid item xs={2}>
+                      <p>Avrage</p>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <LinearProgress sx={{ bgcolor: "#d0d0d0", borderRadius: 4, height: 7 }} variant="determinate" value={20} color="warning" />
+                    </Grid>
+                  </Grid>
+
+                  <Grid container alignItems="center" gap={2}>
+                    <Grid item xs={2}>
+                      <p>Poor</p>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <LinearProgress sx={{ bgcolor: "#d0d0d0", borderRadius: 4, height: 7 }} variant="determinate" value={10} color="error" />
+                    </Grid>
+                  </Grid>
                 </Box>
-              </Grid2>
-            </Grid2>
+              </Grid>
+            </Grid>
           </div>
+        </section>
+
+{/* Similar products*/}
+          <section className="pt-10">
+            <h1 className="py-5 text-x1 font-bold">similar products</h1>
+            <div className="flex flex-wrap space-y-5">
+              {sproduct.map((item)=><HomeSectionCard sproduct={item} />)}
+            </div>
         </section>
 
       </div>

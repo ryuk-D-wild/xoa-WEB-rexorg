@@ -6,6 +6,8 @@ import Footer from './customer/components/Footer/Footer';
 import Product from './customer/components/Product/Product';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ProductDetails from './customer/components/productDetails/productDetails';
+import Cart from './customer/components/Cart/Cart';
+import Checkout from './customer/checkoutpages/CheckOut';
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
         <Navigation />
       </div>
       <div className="pt-28">
-        {/* <HomePage /> */}
-        {/* <Product/>   */}
-        <ProductDetails />
+         {/* <HomePage /> 
+        <Product/>   
+        <ProductDetails /> 
+        <Cart /> */}
+        <Checkout />
       </div>
         <Footer/>
     </div>

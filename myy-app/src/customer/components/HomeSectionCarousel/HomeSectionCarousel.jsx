@@ -13,9 +13,9 @@ const HomeSectionCarousel = ({data, sectionName}) => {
       2048: { items: 6 },
     };
     
-    const items = data.slice(0, 10).map((product, index) => (
+    const items = data.slice(0, 10).map((sproduct, index) => (
       <div key={index} className="transform transition-transform duration-500 ease-in-out hover:scale-105">
-        <HomeSectionCard product={product} />
+        <HomeSectionCard sproduct={sproduct} />
       </div>
     ));
     

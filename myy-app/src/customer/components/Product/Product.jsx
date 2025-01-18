@@ -16,7 +16,7 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
-import { product } from '../../../data/sampledata'
+import { sproduct } from '../../../data/sampledata'
 import ProductCard from './ProductCard'
 import { filters, singleFilter } from './FilterData'
 
@@ -296,7 +296,7 @@ export default function Product() {
               {/* Product grid */}
               <div className="lg:col-span-4 w-full">
                 <div className='flex flex-wrap justify-center bg-grey py-5'>
-                  {product.map((item) => <ProductCard product={item} />)}
+                  {sproduct.map((item) => <ProductCard product={item} />)}
                 </div>
               </div>
             </div>

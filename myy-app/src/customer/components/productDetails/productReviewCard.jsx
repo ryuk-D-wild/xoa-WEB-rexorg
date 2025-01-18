@@ -20,7 +20,7 @@ const ProductReviewCard = () => {
                     </div>
                 </div>
                 <Rating value={4.5} name='half-rating' readOnly precision={.5}/>
-                <p>hndg d tku k udmx uf</p>
+                <p>al products </p>
                </Grid2>
 
             </Grid2>
