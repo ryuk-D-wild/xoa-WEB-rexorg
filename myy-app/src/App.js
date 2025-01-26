@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePage from './customer/pages/HomePage';
 import Navigation from './customer/components/Navigation/Navigation';
@@ -8,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import ProductDetails from './customer/components/productDetails/productDetails';
 import Cart from './customer/components/Cart/Cart';
 import Checkout from './customer/checkoutpages/CheckOut';
+import Order from './customer/postcheckpages/Order';
 
 function App() {
   return (
@@ -17,11 +17,12 @@ function App() {
         <Navigation />
       </div>
       <div className="pt-28">
-         {/* <HomePage /> 
-        <Product/>   
-        <ProductDetails /> 
-        <Cart /> */}
-        <Checkout />
+        {/*  <HomePage /> */}
+        {/*<Product/>   */}
+        {/* <ProductDetails /> */}
+        {/* <Cart /> */}
+        {/* <Checkout /> */}
+         <Order />
       </div>
         <Footer/>
     </div>
