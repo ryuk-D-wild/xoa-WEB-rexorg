@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
+import OrderCard from "../components/Order/OrderCard";
 
 const orderStatus = [
     { label: "On The Way", value: "On_The_Way-..." },
@@ -34,10 +35,8 @@ const Order = () => {
                 <Grid item xs={12} sm={9} sx={{padding: { xs: 2, sm: 3 },marginTop: { xs: 2, sm: 0 },backgroundColor: "white",boxShadow: 3,borderRadius: 2}}>
                   
                     <div className="text-gray-700 text-center">
-                        <h2 className="text-xl font-semibold">Main Content</h2>
-                        <p className="mt-4 text-sm sm:text-base">
-                            This is where the main content goes. Adjust the layout as needed!
-                        </p>
+                        <h2 className="text-xl font-semibold">All Order's</h2>
+                        <OrderCard />
                     </div>
                 </Grid>
             </Grid>
