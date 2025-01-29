@@ -11,10 +11,10 @@ const orderStatus = [
 
 const Order = () => {
     return (
-        <div className="p-4 sm:p-6">
+        <div className="p-4 sm:p-6 min-h-screen">
             <Grid container spacing={2} sx={{ flexDirection: { xs: "column", sm: "row" }, justifyContent: { sm: "space-between" } }} > {/* Stack vertically on mobile/ flexDirection: { xs: "column", sm: "row" } */}
                 {/* Filter Panel */}
-                <Grid item xs={12} sm={3} sx={{position: "sticky",top: 16,height: { xs: "auto", sm: "100vh" },overflowY: "auto",backgroundColor: "white",boxShadow: 3,padding: 2,borderRadius: 2}} > {/* height: { xs: "auto", sm: "100vh" }, / Full height on desktop */}
+                <Grid item xs={12} sm={3} sx={{position: "sticky",top: 16,height: { xs: "auto", sm: "100vh" },overflowY: "auto",backgroundColor: "white",boxShadow: 3,padding: 2,borderRadius: 2, zIndex:10}} > {/* height: { xs: "auto", sm: "100vh" }, / Full height on desktop   // zIndex: 10 /& Ensures it stays above OrderCard */}
                      {/*overflowY: "auto", / Scrollable on small screens*/}
 
                     <h1 className="font-bold text-lg sm:text-xl">Filter</h1>
@@ -32,11 +32,17 @@ const Order = () => {
                 </Grid>
 
                 {/* Main Content */}
-                <Grid item xs={12} sm={9} sx={{padding: { xs: 2, sm: 3 },marginTop: { xs: 2, sm: 0 },backgroundColor: "white",boxShadow: 3,borderRadius: 2}}>
+                <Grid item xs={12} sm={9} sx={{padding: { xs: 2, sm: 3 },marginTop: { xs: 2, sm: 0 },backgroundColor: "white",boxShadow: 3,borderRadius: 2, minHeight:"100vh", overflowY:"auto", position:"relative", zIndex: 1}}> {/*zIndex: 1 /* Lower than filter panel */}
                   
                     <div className="text-gray-700 text-center">
                         <h2 className="text-xl font-semibold">All Order's</h2>
-                        <OrderCard />
+                        <div className="space-y-4 mt-4">
+                            <OrderCard />
+                            <OrderCard />
+                            <OrderCard />
+                            <OrderCard />
+                            <OrderCard />
+                        </div>
                     </div>
                 </Grid>
             </Grid>
