@@ -21,13 +21,13 @@ const CustomerRoutes =()=>{
             
             
                 <Route path= '/*' element={<HomePage />}></Route>
-                <Route path="/products" element={<Product />} />   
+                <Route path="/product" element={<Product />} />   
                 <Route path= '/cart' element={<Cart />}></Route>
                 <Route path= '/:levelOne/:levelTwo/:levelThree' element={<Product />}></Route>
 
                 
                 
-                  {/*<Product/>   */}
+                 
         {/* <ProductDetails /> */}
         {/* <Cart /> */}
         {/* <Checkout /> */}
