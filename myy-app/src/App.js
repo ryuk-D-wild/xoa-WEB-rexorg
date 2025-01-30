@@ -1,34 +1,16 @@
 import './App.css';
-import HomePage from './customer/pages/HomePage';
-import Navigation from './customer/components/Navigation/Navigation';
-import Footer from './customer/components/Footer/Footer';
-import Product from './customer/components/Product/Product';
-import { BrowserRouter as Router } from 'react-router-dom';
-import ProductDetails from './customer/components/productDetails/productDetails';
-import Cart from './customer/components/Cart/Cart';
-import Checkout from './customer/checkoutpages/CheckOut';
-import Order from './customer/postcheckpages/Order';
-import OrderDetails from './customer/postcheckpages/OrderDetails';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import CustomerRoutes from './Routers/CustomerRoutes';
 
 function App() {
   return (
-    <Router>
+    
     <div>
-      <div className="fixed top-0 left-0 w-full z-50">
-        <Navigation />
-      </div>
-      <div className="pt-28">
-        {/*  <HomePage /> */}
-        {/*<Product/>   */}
-        {/* <ProductDetails /> */}
-        {/* <Cart /> */}
-        {/* <Checkout /> */}
-        {/* <Order /> */}
-        <OrderDetails />
-      </div>
-        <Footer/>
-    </div>
-    </Router>
+      <Routes>
+        <Route path='/' element={<CustomerRoutes/>}></Route>
+        <Route></Route>
+      </Routes>
+    </div>  
   );
 }
 

@@ -10,7 +10,7 @@ const OrderTracker = ({ activeStep }) => {
                 {steps.map((label, index) => (
                     <Step key={index}>
                         <StepLabel>
-                            <span style={{ color: "#9155fd", fontSize: "18px", fontWeight: "bold" }}>
+                            <span style={{ color: "#9155fd", fontSize: "8px", fontWeight: "bold" }}>
                                 {label}
                             </span>
                         </StepLabel>

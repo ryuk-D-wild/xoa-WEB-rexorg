@@ -8,7 +8,7 @@ const OrderDetails = () => {
   return (
     <div className="px-5 lg:px-20">
       {/* Delivery Address Section */}
-      <div className="p-5 broder bg-white rounded-md">
+      <div className="p-5 border bg-white rounded-md">
         <h1 className="font-bold text-xl py-7">Delivery Address</h1>
         <AddressCard />
       </div>
@@ -19,7 +19,7 @@ const OrderDetails = () => {
       </div>
 
       {/* Product Details & Review Section - Side by Side */}
-      <Grid container justifyContent="center" >
+      <Grid container justifyContent="center" className="">
         {[1,1,1,1,1].map((item)=><Grid
           item
           xs={12}
