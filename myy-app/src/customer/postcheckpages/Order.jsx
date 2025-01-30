@@ -39,9 +39,7 @@ const Order = () => {
                         <div className="space-y-4 mt-4">
                             <OrderCard />
                             <OrderCard />
-                            <OrderCard />
-                            <OrderCard />
-                            <OrderCard />
+                            {[1,1,1].map((item)=> <OrderCard />)}
                         </div>
                     </div>
                 </Grid>
