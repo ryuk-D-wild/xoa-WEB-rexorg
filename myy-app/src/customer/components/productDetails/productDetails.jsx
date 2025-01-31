@@ -24,6 +24,7 @@ import { ShoppingBagIcon } from '@heroicons/react/24/outline'
 import ProductReviewCard from './productReviewCard'
 import HomeSectionCard from './../HomeSectionCard/HomeSectionCard'
 import { sproduct } from '../../../data/sampledata'
+import { useNavigate } from 'react-router-dom'
 
 const product = {
   name: 'demo look',
@@ -86,6 +87,11 @@ function classNames(...classes) {
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
+  
+  const navigate=useNavigate();
+  const handelAddToCart=()=>{
+    navigate("/cart")
+  }
 
   return (
     <div className="bg-white lg:px-20">
@@ -220,7 +226,7 @@ export default function ProductDetails() {
                   </fieldset>
                 </div>
                 <div className="mt-6 flex justify-center">
-                  <Button className="text-gray-900" variant="contained" sx={{ bgcolor: '#ff7f50', '&:hover': { bgcolor: '#ffdead' }, }}>Add to Cart<ShoppingBagIcon className="size-5" /></Button>
+                  <Button onClick={handelAddToCart} className="text-gray-900" variant="contained" sx={{ bgcolor: '#ff7f50', '&:hover': { bgcolor: '#ffdead' }, }}>Add to Cart<ShoppingBagIcon className="size-5" /></Button>
                 </div>
               </form>
             </div>

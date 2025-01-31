@@ -79,16 +79,16 @@ const navigation = {
   ],
   pages: [
     { name: 'All Cloths', href: '/Product' },
-    { name: 'Stores', href: '/stores' },
+    {name: 'My Orders', href: '/account/order/:orderId'},
   ],
 }
 
 export default function Navigation() {
   const [open, setOpen] = useState(false)
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleNavigation = (path) => {
-    navigate(path)
+    navigate(path);
     setOpen(false) // Close mobile menu after navigation
   }
 

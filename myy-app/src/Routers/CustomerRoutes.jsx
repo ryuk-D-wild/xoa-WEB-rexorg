@@ -18,21 +18,15 @@ const CustomerRoutes =()=>{
       </div>  
       <div className="pt-28">          
             <Routes>
-            
-            
+                        
                 <Route path= '/*' element={<HomePage />}></Route>
                 <Route path="/product" element={<Product />} />   
                 <Route path= '/cart' element={<Cart />}></Route>
                 <Route path= '/:levelOne/:levelTwo/:levelThree' element={<Product />}></Route>
-
-                
-                
-                 
-        {/* <ProductDetails /> */}
-        {/* <Cart /> */}
-        {/* <Checkout /> */}
-        {/* <Order /> */}
-        {/* <OrderDetails /> */}
+                <Route path= '/product/:productId' element={<ProductDetails />}></Route>
+                <Route path= '/checkout' element={<Checkout />}></Route>
+                <Route path= '/account/order' element={<Order />}></Route>
+                <Route path= '/account/order/:orderId' element={<OrderDetails />}></Route>
 
             </Routes>
             </div>
