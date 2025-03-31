@@ -1,6 +1,6 @@
 const userService = require("../services/user.service.js")
 const jwtProvider = require("../config/jwtProvider.js")
-const bcrpyt = require("bcrypt");
+const bcrypt = require("bcrypt");
 const cartService = require("../services/cart.service.js");
 
 const register = async (req, res) => {
@@ -29,7 +29,7 @@ const login = async (req, res) => {
             return res.status(404).send({ message: 'user not found with email :', email })
         }
 
-        const isPasswordValid = await bcrpyt.compare(password, user.password);
+        const isPasswordValid = await bcrypt.compare(password, user.password);
 
         if (!isPasswordValid) {
             return res.status(401), send({

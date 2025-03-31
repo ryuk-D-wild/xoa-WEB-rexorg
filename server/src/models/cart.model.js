@@ -1,38 +1,40 @@
-const mongoose =require('mongoose');
+const mongoose = require('mongoose');
 
 const cartSchema = new mongoose.Schema({
     user: {
-        type:mongoose.Schema.Types.ObjectId,
-        ref: 'users ',
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'users',
         required: true,
     },
-    cartItems:[ {
-            type:mongoose.Schema.Types.ObjectId,
-            ref: 'cartItems ',
-            required: true,
+    cartItems: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'cartItems',
+        required: true,
     }],
     totalPrice: {
-        type:Number,
+        type: Number,
         required: true,
-        default:0
+        default: 0
     },
     totalItem: {
-        type:Number,
+        type: Number,
         required: true,
-        default:0
+        default: 0
     },
     totalDiscountedPrice: {
-        type:Number,
+        type: Number,
         required: true,
-        default:0
+        default: 0
     },
     discount: {
-        type:Number,
+        type: Number,
         required: true,
-        default:0
+        default: 0
     }
-})
+});
 
-const Vart = mongoose.model('cart ', cartSchema);
+// Define the cart model
+const Cart = mongoose.model('cart', cartSchema);  // Corrected model name and variable name
 
-module.exports = Cart;
+// Export the cart model
+module.exports = Cart;  // Corrected to export 'Cart'

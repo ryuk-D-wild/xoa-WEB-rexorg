@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":" nodemon src/server.js",
-    "start":"node scr/server.js"
+    "dev": " nodemon src/server.js",
+    "start": "node scr/server.js"
   },
   "keywords": [],
   "author": "",

@@ -11,10 +11,10 @@ app.get("/",(req,res)=>{
     return res.status(200).send({message : "this is your server connector api",status:true})
 })
 
-const authRouters=require(".routes/auth.route.js")
+const authRouters=require("./routes/auth.route.js")
 app.use("/auth",authRouters);
 
 
 const userRouters=require("./routes/user.route.js");
-app.use("/users",userRouters);
+app.use("/api/users",userRouters);
 module.exports=app;

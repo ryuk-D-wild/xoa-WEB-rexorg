@@ -2,6 +2,8 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { MainCarouselData } from './MainCarouselData';
+import { useNavigate } from "react-router-dom";
+
 
 const MainCarousel = () => {
   const items = MainCarouselData.map((item, index) => (
@@ -14,8 +16,9 @@ const MainCarousel = () => {
     />
   ));
 
+  const navigate=useNavigate();
   return (
-    <div className="relative">
+    <div onClick={()=>navigate('/account/order/${6}')} className="relative">
       <AliceCarousel
         items={items}
         autoPlay

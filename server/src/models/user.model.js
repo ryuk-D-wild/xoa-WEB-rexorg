@@ -1,56 +1,58 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const userSchema=new mongoose.Schema({
-    firstNmae:{
-        type:String,
-        require:true,
+const userSchema = new mongoose.Schema({
+    firstName: {  // corrected typo from 'firstNmae' to 'firstName'
+        type: String,
+        required: true,  // corrected typo from 'require' to 'required'
     },
-    lastNmae:{
-            type:String,
-            required:true,
+    lastName: {  // corrected typo from 'lastNmae' to 'lastName'
+        type: String,
+        required: true,
     },
-    password:{
-        type:String,
-        required:true,
+    password: {
+        type: String,
+        required: true,
     },
-    email:{
-        type:String,
-        required:true,
+    email: {
+        type: String,
+        required: true,
     },
-    role:{
-        type:String,
-        required:true,
-        default:"customer"
+    role: {
+        type: String,
+        required: true,
+        default: "customer"
     },
-    mobile:{
-        type:String,
+    mobile: {
+        type: String,
     },
-    address:[{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"addresses"
+    address: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "addresses"
     }],
-    aymentInformation:[
+    paymentInformation: [  // corrected typo from 'aymentInformation' to 'paymentInformation'
         {
-            type:mongoose.Schema.ObjectId,
-            ref:"payment_information"
+            type: mongoose.Schema.ObjectId,
+            ref: "payment_information"
         }
     ],
-    ratings:[
+    ratings: [
         {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"ratings"
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "ratings"
         }
     ],
-    reviews:[
+    reviews: [
         {
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"reviews"
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "reviews"
         }
     ],
-    createAt:{
-        type:Date,
-        default:Date.now()
+    createdAt: {  // changed from 'createAt' to 'createdAt' for better readability
+        type: Date,
+        default: Date.now
     }
-})
+});
 
-const User=mongoose.model("users",usersSchema)
+const User = mongoose.model("users", userSchema);  // corrected 'usersSchema' to 'userSchema'
+
+module.exports = User;
