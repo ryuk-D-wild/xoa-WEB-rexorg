@@ -3,7 +3,7 @@
 *.tmp
 
 # Ignore directories
-server/node_modules/.cache/
-myy-app/node_modules/.cache/
-server/node_modules/tmp/
-myy-app/node_modules/tmp/
+server/node_modules
+myy-app/node_modules
+server/node_modules
+myy-app/node_modules
