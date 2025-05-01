@@ -5,5 +5,4 @@
 # Ignore directories
 server/node_modules
 myy-app/node_modules
-server/node_modules
-myy-app/node_modules
+admin-app/node_modules
